@@ -15,13 +15,13 @@ jobs:
       - name: Send email
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.example.com  # Replace with your SMTP server address
-          server_port: 587                  # Replace with your SMTP server port
-          username: ${{ secrets.SMTP_USERNAME }}  # Store SMTP username in GitHub Secrets
-          password: ${{ secrets.SMTP_PASSWORD }}  # Store SMTP password in GitHub Secrets
+          server_address: ${{ secrets.SMTP_SERVER_ADDRESS }}
+          server_port: ${{ secrets.SMTP_SERVER_PORT }}            
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
           subject: 'New Pull Request Created'
-          to: hello.world@codeline.rihal.om
-          from: no-reply@example.com  # Replace with the sender's email address
+          to: ${{ secrets.CODELINE_TO_EMAIL }}
+          from: ${{ secrets.CODELINE_SENDER_EMAIL }}
           body: |
             A new pull request has been created in the repository.
             
