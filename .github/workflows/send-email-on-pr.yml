@@ -1,0 +1,29 @@
+name: Send Email on PR
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.example.com  # Replace with your SMTP server address
+          server_port: 587                  # Replace with your SMTP server port
+          username: ${{ secrets.SMTP_USERNAME }}  # Store SMTP username in GitHub Secrets
+          password: ${{ secrets.SMTP_PASSWORD }}  # Store SMTP password in GitHub Secrets
+          subject: 'New Pull Request Created'
+          to: hello.world@codeline.rihal.om
+          from: no-reply@example.com  # Replace with the sender's email address
+          body: |
+            A new pull request has been created in the repository.
+            
+            Repository: https://github.com/CodelineGitHub/CodelineProblemSolving
+            Pull Request: ${{ github.event.pull_request.html_url }}
