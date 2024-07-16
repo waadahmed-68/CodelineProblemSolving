@@ -3,7 +3,7 @@
 To submit your solution for all 4 problems, please follow these steps:
 
 ### Step 1: Fork the Repository
-- Navigate to [this repository]([https://github.com/CodelineAtyab/CodelineProblemSolvingArea](https://github.com/CodelineGitHub/CodelineProblemSolving)) provided by Codeline.
+- Navigate to [this repository]([https://github.com/CodelineGitHub/CodelineProblemSolving/](https://github.com/CodelineGitHub/CodelineProblemSolving/)) provided by Codeline.
 - Click on the "Fork" button at the top-right corner of the page to create a copy of the repository under your own GitHub account.
 
 ### Step 2: Clone the Forked Repository
