@@ -1,3 +1,4 @@
+### Current Submission Deadline: 21-July-2024  
 ## Submission Instructions
 
 To submit your solution for all 4 problems, please follow these steps:
@@ -48,7 +49,7 @@ To submit your solution for all 4 problems, please follow these steps:
 - Provide a title and description for your pull request, then click "Create pull request".
 
 ### Step 8: Notify Codeline
-- Notify codeline via email that you have submitted your solution.
+- Notify codeline via email that you have submitted your solution at (hello.world@codeline.rihal.om)
 
 ## Note: If you face any issues in the process above, Please do the following:
 - Watch [this youtube tutorial](https://www.youtube.com/watch?v=a_FLqX3vGR4)
